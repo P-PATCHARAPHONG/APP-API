@@ -99,7 +99,7 @@ exports.login = async (req, res, next) => {
         id: user.id,
         username: user.username,
         friendname: user.friendname,
-        lastname: user.lastname,
+        lastname: user.lastname !== '' ? user.lastname : null,
         email: user.email,
         gender: user.gender,
         phone: user.phone,
