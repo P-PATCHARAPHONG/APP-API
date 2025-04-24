@@ -2,7 +2,7 @@ const socketIo = require('socket.io');
 const logger = require('./utils/logger');
 const Group = require('./models/group.model');
 const User = require('./models/users.model');
-const { sendNotification } = require('./firebase');
+const { sendNotification } = require('./services/notification.service');
 
 const activeUsersInChat = {};
 
